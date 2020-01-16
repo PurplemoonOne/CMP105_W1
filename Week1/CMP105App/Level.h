@@ -17,8 +17,20 @@ public:
 private:
 	void beginDraw();
 	void endDraw();
+
+	void MoveShape();
 	sf::RenderWindow* window;
 
+	
 	sf::RectangleShape rect;
+	sf::RectangleShape rect_two;
 	sf::CircleShape circle;
+
+	sf::Font font;
+	sf::Text text;
+
+	sf::Texture texture;
+	sf::Sprite sprite;
+
+	sf::Vector2i incriment;
 };
